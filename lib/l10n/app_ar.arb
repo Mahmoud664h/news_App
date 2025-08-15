@@ -1,0 +1,22 @@
+{
+  "home": "الرئيسية",
+  "something_went_wrong": "حدث خطأ ما.",
+  "by": "بواسطة",
+  "go_to_home": "الذهاب إلى الرئيسية",
+  "theme": "المظهر",
+  "dark": "داكن",
+  "light": "فاتح",
+  "language": "اللغة",
+  "english": "الإنجليزية",
+  "arabic": "العربية",
+  "view_all": "عرض الكل",
+  "good_morning": "صباح الخير\nإليك بعض الأخبار",
+  "no_news": "لا توجد أخبار متاحة",
+  "general": "عام",
+  "business": "أعمال",
+  "sports": "رياضة",
+  "technology": "تكنولوجيا",
+  "entertainment": "ترفيه",
+  "health": "صحة",
+  "science": "علوم"
+}

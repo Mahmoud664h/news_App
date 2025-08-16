@@ -217,6 +217,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Science'**
   String get science;
+
+  /// No description provided for @view_articel.
+  ///
+  /// In en, this message translates to:
+  /// **'View Full Articel'**
+  String get view_articel;
 }
 
 class _AppLocalizationsDelegate

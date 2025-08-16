@@ -21,7 +21,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get go_to_home => 'الذهاب إلى الرئيسية';
 
   @override
-  String get theme => 'المظهر';
+  String get theme => 'السمة';
 
   @override
   String get dark => 'داكن';
@@ -42,7 +42,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get view_all => 'عرض الكل';
 
   @override
-  String get good_morning => 'صباح الخير\nإليك بعض الأخبار';
+  String get good_morning => 'صباح الخير\nإليك بعض الأخبار لك';
 
   @override
   String get no_news => 'لا توجد أخبار متاحة';
@@ -67,4 +67,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get science => 'علوم';
+
+  @override
+  String get view_articel => 'عرض المقال كاملاً';
 }

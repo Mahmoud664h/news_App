@@ -31,6 +31,7 @@ class CategoryFragment extends StatelessWidget {
             AppLocalizations.of(context)!.good_morning,
             style: Theme.of(context).textTheme.headlineMedium,
           ),
+          SizedBox(height: height * 0.01),
           Expanded(
             child: ListView.separated(
               itemBuilder: (BuildContext context, int index) {

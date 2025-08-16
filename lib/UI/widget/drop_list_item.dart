@@ -30,7 +30,7 @@ class DropListItem extends StatelessWidget {
         return DropdownMenuItem<String>(value: value, child: Text(value));
       }).toList(),
       onChanged: onChanged,
-      initialValue: selectedValue,
+      value: selectedValue,
     );
   }
 

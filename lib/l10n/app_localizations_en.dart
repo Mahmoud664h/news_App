@@ -67,4 +67,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get science => 'Science';
+
+  @override
+  String get view_articel => 'View Full Articel';
 }

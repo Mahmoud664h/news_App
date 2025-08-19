@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/UI/home/category_details/cubit/news_state.dart';
 import 'package:news_app/UI/home/category_details/cubit/news_view_modal.dart';
 import 'package:news_app/UI/home/category_details/news/news_items.dart';
-
 import 'package:news_app/model/source.dart';
 import 'package:news_app/utlis/app_colors.dart';
 

@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/UI/home/category_details/Source/source_tab_widget.dart';
 import 'package:news_app/UI/home/category_details/cubit/source_state.dart';
 import 'package:news_app/UI/home/category_details/cubit/source_view_model.dart';
+import 'package:news_app/di/di.dart';
 
 import 'package:news_app/l10n/app_localizations.dart';
 import 'package:news_app/model/category_model.dart';
@@ -21,7 +22,7 @@ class CategoryDetails extends StatefulWidget {
 }
 
 class _CategoryDetailsState extends State<CategoryDetails> {
-  SourceViewModel viewModel = SourceViewModel();
+  SourceViewModel viewModel = SourceViewModel(sourceRepository: injectSourceRepository());
   late AppLanguageProvider applanguage;
   @override
   void didChangeDependencies() {

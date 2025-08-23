@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/UI/home/category_details/Source/source_name.dart';
-import 'package:news_app/UI/home/category_details/news/news_widget.dart';
+import 'package:news_app/UI/home/category_details/news/news_details.dart';
 import 'package:news_app/model/source.dart';
 import 'package:news_app/utlis/app_colors.dart';
 
@@ -40,7 +40,7 @@ class _SourceTabWidgetState extends State<SourceTabWidget> {
           ),
 
           Expanded(
-            child: NewsWidget(source: widget.sourcesList[selectedIndex]),
+            child: NewsDetails(source: widget.sourcesList[selectedIndex]),
           ),
         ],
       ),

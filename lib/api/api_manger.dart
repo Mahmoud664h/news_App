@@ -12,7 +12,7 @@ class ApiManger {
   https://newsapi.org/v2/everything?q=bitcoin&apiKey=15f8125729ee4a0ca6a328779282b619
   */
 
-  static Future<SourceResponse?> getSources(
+   Future<SourceResponse?> getSources(
     String categoryId,
     String applanguage,
   ) async {
@@ -32,7 +32,7 @@ class ApiManger {
     }
   }
 
-  static Future<NewResponse?> getNewsBySourceId(String sourceId) async {
+   Future<NewResponse?> getNewsBySourceId(String sourceId) async {
     Uri url = Uri.https(ApiConstants.baseUrl, EndPoints.newsApi, {
       'apiKey': ApiConstants.apiKey,
       'sources': sourceId,

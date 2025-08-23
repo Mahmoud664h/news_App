@@ -3,16 +3,17 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/UI/home/category_details/cubit/news_state.dart';
 import 'package:news_app/UI/home/category_details/cubit/news_view_modal.dart';
 import 'package:news_app/UI/home/category_details/news/news_items.dart';
+import 'package:news_app/di/di.dart';
 import 'package:news_app/model/source.dart';
 import 'package:news_app/utlis/app_colors.dart';
 
-class NewsWidget extends StatelessWidget {
+class NewsDetails extends StatelessWidget {
   final Source source;
-  const NewsWidget({super.key, required this.source});
+  const NewsDetails({super.key, required this.source});
 
   @override
   Widget build(BuildContext context) {
-    NewsViewModal viewModal = NewsViewModal();
+    NewsViewModal viewModal = NewsViewModal(newsRepo: injectNewsRepo());
     var height = MediaQuery.of(context).size.height;
     viewModal.getSourcesBuId(source.id ?? '');
     return BlocBuilder<NewsViewModal, NewsState>(

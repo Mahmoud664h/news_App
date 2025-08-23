@@ -1,13 +1,15 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:news_app/UI/home/category_details/cubit/news_state.dart';
-import 'package:news_app/api/api_manger.dart';
+import 'package:news_app/data/repository/news/repo/news_repo.dart';
 
 class NewsViewModal extends Cubit<NewsState> {
-  NewsViewModal() : super(NewsLoadingState());
+   NewsRepo newsRepo;
+
+  NewsViewModal({required this.newsRepo}) : super(NewsLoadingState());
   void getSourcesBuId(String sourceId) async {
     try {
       emit(NewsLoadingState());
-      var response = await ApiManger.getNewsBySourceId(sourceId);
+      var response = await newsRepo.getNewsBySourceId(sourceId);
       if (response?.status == 'error') {
         emit(NewsErrorState(errorMessage: response!.message!));
       } else if (response?.status == 'ok') {
